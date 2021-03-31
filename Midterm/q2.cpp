@@ -1,4 +1,4 @@
-#include <iostream>
+##include <iostream>
 #include <iomanip>
 
 using namespace std;
@@ -8,7 +8,7 @@ int main()
     string namestudent;
     int score, numstudents, numcourses, numscores;
     int i = 0, j = 0, sum = 0;
-    float average;
+    float average, aboveeighty;
     do
     {
         cout << "please enter the number of students  ";
@@ -17,3 +17,20 @@ int main()
         cin >> numcourses;
     } while ((numstudents < 0) or (numcourses < 0));
     for (i = 0; i < numstudents; i++)
+    {
+        cout << "\nplease enter the student name ";
+        cin >> namestudent;
+        for (j = 0; j < numcourses; j++)
+        {
+            cout << "enter score " << j+1 << " : ";
+            cin >> score;
+            sum = sum + score;
+        }
+        average = (sum / numcourses);
+        cout << "the name of the student is  " << namestudent;
+        cout << "\n the sum is  " << sum;
+        cout << "\n the average is  " << average;
+        sum = 0;
+    }
+    cout << "the number of students above 80%"
+}
