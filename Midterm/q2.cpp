@@ -1,4 +1,4 @@
-##include <iostream>
+#include <iostream>
 #include <iomanip>
 
 using namespace std;
@@ -27,10 +27,14 @@ int main()
             sum = sum + score;
         }
         average = (sum / numcourses);
-        cout << "the name of the student is  " << namestudent;
+        cout << "student name :  " << namestudent;
+        cout << "\nscore 1: " << score;
+        cout << "\nscore 2: " << score;
         cout << "\n the sum is  " << sum;
         cout << "\n the average is  " << average;
         sum = 0;
     }
-    cout << "the number of students above 80%"
+    int above;
+    if (average > 80)
+    cout << "the number of students who average above 80% is ";
 }
