@@ -1,6 +1,0 @@
-The purpose of using the Github classroom and repl.it is to check your file's history.
-While you have been workin on your files through the Repl.it, your updates log would be stored in the Github Repository if you click the "Commit" button in Repl.it
-So we can see all your file updates and history.
-
-As you kwnow, all your files in Github now has been uploaded via "file upload". It means that there in only final state in Github, other than any update history.
-In short, you need to make your file through Repl.it and click "commit" in Repl.it to uplaod your file in Github.
