@@ -1,40 +1,28 @@
 #include <iostream>
-#include <iomanip>
-
+#include <fstream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 int main()
 {
-    string namestudent;
-    int score, numstudents, numcourses, numscores;
-    int i = 0, j = 0, sum = 0;
-    float average, aboveeighty;
-    do
+    ifstream myfile;
+    int i, num, score1, score2;
+    string name;
+    myfile.open("students.txt");
+    myfile >> i;
+    for (int j = 1; j <= i; j++)
     {
-        cout << "please enter the number of students  ";
-        cin >> numstudents;
-        cout << "please enter the number of courses  ";
-        cin >> numcourses;
-    } while ((numstudents < 0) or (numcourses < 0));
-    for (i = 0; i < numstudents; i++)
-    {
-        cout << "\nplease enter the student name ";
-        cin >> namestudent;
-        for (j = 0; j < numcourses; j++)
-        {
-            cout << "enter score " << j+1 << " : ";
-            cin >> score;
-            sum = sum + score;
-        }
-        average = (sum / numcourses);
-        cout << "student name :  " << namestudent;
-        cout << "\nscore 1: " << score;
-        cout << "\nscore 2: " << score;
-        cout << "\n the sum is  " << sum;
-        cout << "\n the average is  " << average;
-        sum = 0;
+        myfile >> name;
+        myfile >> score1;
+        myfile >> score2;
+        cout << name << endl;
+        cout << " the sum is: " <<  (score1 +score2);
+        cout << ".  the average is: " << ((score1+score2)/2) << endl;
+        
+        
     }
-    int above;
-    if (average > 80)
-    cout << "the number of students who average above 80% is ";
+
+    myfile.close();
+    return 0;
 }
