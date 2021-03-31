@@ -1,23 +1,19 @@
 #include <iostream>
-#include<iomanip>
+#include <iomanip>
+
 using namespace std;
 
-int main () 
+int main()
 {
-   
-//variables to hold the values of each type of ticket
-float classa = 15.00 , classb = 12, classc = 9, amta, amtb, amtc, total;
-cout << "please enter the amount of tickets for class A ";
-cin >> amta;
-cout << "please enter the amount of tickets for class B ";
-cin >> amtb;
-cout << "please enter the amount of tickets for class C ";
-cin >> amtc;
-total = (classa * amta) + (classb * amtb) + (classc * amtc);
-cout << "the total is $ " <<  std::fixed << std::setprecision(2) << total << "\n"; 
-return 0;
-cout << total;
-//displaying the results and rounding them
-
-return 0;
-}
+    string namestudent;
+    int score, numstudents, numcourses, numscores;
+    int i = 0, j = 0, sum = 0;
+    float average;
+    do
+    {
+        cout << "please enter the number of students  ";
+        cin >> numstudents;
+        cout << "please enter the number of courses  ";
+        cin >> numcourses;
+    } while ((numstudents < 0) or (numcourses < 0));
+    for (i = 0; i < numstudents; i++)
