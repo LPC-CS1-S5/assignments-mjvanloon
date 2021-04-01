@@ -6,23 +6,27 @@ using namespace std;
 
 int main()
 {
-    ofstream myfile;
+    ifstream myfile;
     int i, num, score1, score2;
+    int studentcount = 0;
     string name;
-    cout << "enter the number of students ";
-    cin >> i;
-    myfile.open("scores.txt");
+    myfile.open("students.txt");
+    myfile >> i;
     for (int j = 1; j <= i; j++)
     {
-        cout << "enter the student name  ";
-        cin >> name;
-        cout << "enter the first score ";
-        cin >> score1;
-        cout << "enter the second score  ";
-        cin >> score2;
-         myfile << name << " " << score1 << " " << score2 << endl;
+
+        cout << i;
+        myfile >> name;
+        myfile >> score1;
+        myfile >> score2;
+        cout << name << endl;
+        cout << " the sum is: " <<  (score1 +score2);
+        cout << ".  the average is: " << ((score1+score2)/2) << endl;
+        if ((score1 + score2 /2) > 80);
+        studentcount ++;
         
     }
-
+cout << studentcount;
     myfile.close();
     return 0;
+}
