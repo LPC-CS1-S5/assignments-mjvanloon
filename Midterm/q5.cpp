@@ -10,7 +10,7 @@ int a
 cin >> a 
 return a
 }
-issame (int a, int b)
+void issame (int a, int b)
 {
 if (a==b)
 break
