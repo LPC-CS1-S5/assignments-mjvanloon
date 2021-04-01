@@ -22,21 +22,22 @@ if (a > b)
     else
     result = (b/a);
 }
-int filewrite
-
+void filewrite (int n1, int n2)
+{
+   myfile.open("question5.txt");
+    if (n1 > n2)
+    result = (n1/n2);
+    else
+    result = (n2/n1);
+}
 int main()
 {
     ofstream myfile;
     int n1, n2, result;
     n1 = getinput;
     n2 = getinput;
-    issame (n1, n2);
-    myfile.open("question5.txt");
-    if (n1 > n2)
-    result = (n1/n2);
-    else
-    result = (n2/n1);
-else
+    issame (n1, n2); 
+    filewrite (n1, n2);
 if (n1 == n2)
 exit;
 
