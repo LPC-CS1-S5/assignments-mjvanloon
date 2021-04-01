@@ -12,6 +12,7 @@ int main()
     string name;
     myfile.open("students.txt");
     myfile >> i;
+     cout << i;
     for (int j = 1; j <= i; j++)
     {
 
@@ -29,4 +30,3 @@ int main()
 cout << studentcount;
     myfile.close();
     return 0;
-}
