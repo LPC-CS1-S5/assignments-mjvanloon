@@ -23,8 +23,13 @@ int main()
     randn= getrnd;
     myfile.open("numbers.txt");
     for (i = 1; i == 5, i++)
+    {
     if (rand1 < randn)
     cout << randn;
+    rand1 = getrnd;
+randn = getrnd;
+    }
+
     myfile.close();
     return 0;
 }
