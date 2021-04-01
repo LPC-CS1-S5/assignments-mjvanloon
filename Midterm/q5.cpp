@@ -13,14 +13,14 @@ return a
 void issame (int a, int b)
 {
 if (a==b)
-break
+break;
 }
 int division ( int a, int b)
 {
 if (a > b)
-    result = (a/b
-    else
     result = (a/b);
+    else
+    result = (b/a);
 }
 int filewrite
 
@@ -33,7 +33,7 @@ int main()
     issame (n1, n2);
     myfile.open("question5.txt");
     if (n1 > n2)
-    result = (n1/n2)
+    result = (n1/n2);
     else
     result = (n2/n1);
 else
