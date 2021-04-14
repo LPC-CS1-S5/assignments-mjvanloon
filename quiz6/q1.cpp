@@ -6,11 +6,19 @@ using namespace std;
 
 void swaptwovalues (int n1, int n2)
 {
-cout << n2 << " , " << n1;
+    int tmp;
+tmp = n1;
+n1 = n2;
+n2 = tmp;
+cout << n1 << " , " << n2;
 }
 void swaptwovalues (float f1, float f2)
 {
-cout << f2 << " , " << f1 << endl;
+    float tmp;
+tmp = n1;
+n1 = n2;
+n2 = tmp;
+cout << n1 << " , " << n2;
 }
 int main()
 {
