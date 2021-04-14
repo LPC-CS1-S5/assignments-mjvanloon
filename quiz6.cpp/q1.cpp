@@ -19,4 +19,5 @@ int main()
     int c = 1;
     int d = 2;
 swaptwovalues (a, b);
-swaptwovalues (a,b)
+swaptwovalues (c, d);
+}
