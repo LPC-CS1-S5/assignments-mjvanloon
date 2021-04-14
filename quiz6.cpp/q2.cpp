@@ -1,15 +1,21 @@
 #include <iostream>
 #include <fstream>
-#include <cstdlib>
+#include <stdlib.h>
 #include <ctime>
+#include <cmath>
 using namespace std;
 
 void getrnd (int &a, int &b, int &c)
 {
-    &a = rand() % 100 + 1;
-    &b = rand() % 100 + 1;
-    &c = rand() % 100 + 1;
-    
+    int a;
+    int b;
+    int c;
+    a = rand() % 100 + 1;
+    b = rand() % 100 + 1;
+    c = rand() % 100 + 1;
+    &a = a;
+    &b = b;
+    &c = c;
 }
 
 int findmin(int n1, int n2, int n3)
