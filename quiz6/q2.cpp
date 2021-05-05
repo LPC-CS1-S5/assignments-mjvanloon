@@ -33,5 +33,5 @@ int min;
 int a, b, c;
 getrnd (a, b, c);
 min = findmin (a,b,c);
-printresult ( a, b, c, min);
+printresult ( a, b, c, min);44
 }
