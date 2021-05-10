@@ -11,6 +11,7 @@ bool idlength(string email)
 }
 bool domain(string email)
 
+
 {
 	int size;
 	string domainname;
