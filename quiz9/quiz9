@@ -1,15 +1,10 @@
-struct employee
+#include <iostream> 
+#include <iomanip> 
+using namespace std;
+
+struct Employee
 {
-    #include <iostream> 
- #include <iomanip> 
-
-
-    using namespace std;
-
-    struct Employee
-{
-
-int employeeID[6]
+int employeeID[6];
 string firstName;
 string lastName;
 int Salary[6];
@@ -20,34 +15,32 @@ int year[4];
 };
 
 }
-void findsalary(struc employee)
+void findsalary
 {
-       ifstream file("employee.txt");
-    if(file.is_open())
-    {
-        Employee myArray[3];
+    ifstream myfile("employee.txt");
+    myfile.open();
+    Employee myArray[3];
 
         for(int i = 0; i < 3; ++i)
         {
-            if (Employee.salary > 100000)
+            if (myArray[i].salary > 100000)
             cout << firstname << " " <<  lastname << "makes more than $100000"
         }
-
+    myfile.close();
 }
 
 void finddept
 {
-       ifstream file("employee.txt");
-    if(file.is_open())
-    {
-        Employee myArray[3];
+    ifstream myfile("employee.txt");
+    myfile.open();
+    Employee myArray[3];
 
         for(int i = 0; i < 3; ++i)
         {
-            if Employee.dept == "Computer"
-    cout << firstname << " " <<  lastname << "is in the computer department";
+            if myArray[i].dept == "Computer"
+            cout << firstname << " " <<  lastname << "is in the computer department";
         }
-    }
+        myfile.close();
 }
 
 
