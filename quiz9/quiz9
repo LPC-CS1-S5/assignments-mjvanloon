@@ -36,3 +36,7 @@ void readFile(string filename, AccessRecord records[3])
    fin.close();             
 
 }
+int main  ()
+	ifstream ifso;
+	ifso.open("employee.txt");
+    readFile (ifso)
