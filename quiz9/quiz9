@@ -14,8 +14,25 @@ string firstName;
 string lastName;
 int Salary[6];
 string department;
-string startdate;
+string month;
+int day[2];
+int year[4];
 };
 
+}
+void readFile(string filename, AccessRecord records[3])
+{
+   ifstream fin(filename);  
+   if (fin.fail())          
+      return 0;
+
+   while (fin >> records[3]) 
+   {                            
+      int i = 0;                
+      fin >> records[i]        
+      i++;                      
+   }                            
+
+   fin.close();             
 
 }
