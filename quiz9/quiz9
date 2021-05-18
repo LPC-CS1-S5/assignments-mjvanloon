@@ -6,14 +6,6 @@ struct employee
 
     using namespace std;
 
-    struct employee
-{
-    #include <iostream> 
- #include <iomanip> 
-
-
-    using namespace std;
-
     struct Employee
 {
 
@@ -33,24 +25,27 @@ void findsalary(struc employee)
 if employee.salary > 100000
 cout << firstname << " " <<  lastname;
 }
+
 void finddept
 {
     if employee.dept == "Computer"
     cout << firstname << " " <<  lastname;
 }
 
-void readFile(string filename, AccessRecord records[3])
+void readFile
 {
-   ifstream fin(filename);  
-   if (fin.fail())          
-      return 0;
+ 
+   ifstream file("employee.txt");
+    if(file.is_open())
+    {
+        employee myArray[3];
 
-   while (fin >> records[3]) 
-   {                            
-      int i = 0;                
-      fin >> records[i]        
-      i++;                      
-   }                            
+        for(int i = 0; i < 3; ++i)
+        {
+            file >> myArray[i];
+        }
+    }
+
 
    fin.close();             
 
