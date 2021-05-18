@@ -6,6 +6,14 @@ struct employee
 
     using namespace std;
 
+    struct employee
+{
+    #include <iostream> 
+ #include <iomanip> 
+
+
+    using namespace std;
+
     struct Employee
 {
 
@@ -20,6 +28,17 @@ int year[4];
 };
 
 }
+void findsalary(struc employee)
+{
+if employee.salary > 100000
+cout << firstname << " " <<  lastname;
+}
+void finddept
+{
+    if employee.dept == "Computer"
+    cout << firstname << " " <<  lastname;
+}
+
 void readFile(string filename, AccessRecord records[3])
 {
    ifstream fin(filename);  
