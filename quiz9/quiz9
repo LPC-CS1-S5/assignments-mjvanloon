@@ -25,11 +25,11 @@ void findsalary(struc employee)
        ifstream file("employee.txt");
     if(file.is_open())
     {
-        employee myArray[3];
+        Employee myArray[3];
 
         for(int i = 0; i < 3; ++i)
         {
-            if (employee.salary > 100000)
+            if (Employee.salary > 100000)
             cout << firstname << " " <<  lastname << "makes more than $100000"
         }
 
@@ -40,12 +40,12 @@ void finddept
        ifstream file("employee.txt");
     if(file.is_open())
     {
-        employee myArray[3];
+        Employee myArray[3];
 
         for(int i = 0; i < 3; ++i)
         {
-            if employee.dept == "Computer"
-    cout << firstname << " " <<  lastname << "is in the computer deaprtment";
+            if Employee.dept == "Computer"
+    cout << firstname << " " <<  lastname << "is in the computer department";
         }
     }
 }
@@ -70,6 +70,6 @@ void readFile
 
 }
 int main  ()
-	ifstream ifso;
-	ifso.open("employee.txt");
-    readFile (ifso)
+findsalary;
+finddepartment;
+}
