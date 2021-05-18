@@ -9,14 +9,12 @@ struct employee
     struct Employee
 {
 
-int employeeID;
-char firstName;
-char lastName;
-float Salary;
-char department
-;
-
-
+int employeeID[6]
+string firstName;
+string lastName;
+int Salary[6];
+string department;
+string startdate;
 };
 
 
