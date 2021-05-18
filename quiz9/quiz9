@@ -22,15 +22,34 @@ int year[4];
 }
 void findsalary(struc employee)
 {
-if employee.salary > 100000
-cout << firstname << " " <<  lastname;
+       ifstream file("employee.txt");
+    if(file.is_open())
+    {
+        employee myArray[3];
+
+        for(int i = 0; i < 3; ++i)
+        {
+            if (employee.salary > 100000)
+            cout << firstname << " " <<  lastname << "makes more than $100000"
+        }
+
 }
 
 void finddept
 {
-    if employee.dept == "Computer"
-    cout << firstname << " " <<  lastname;
+       ifstream file("employee.txt");
+    if(file.is_open())
+    {
+        employee myArray[3];
+
+        for(int i = 0; i < 3; ++i)
+        {
+            if employee.dept == "Computer"
+    cout << firstname << " " <<  lastname << "is in the computer deaprtment";
+        }
+    }
 }
+
 
 void readFile
 {
