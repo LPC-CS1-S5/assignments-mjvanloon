@@ -16,6 +16,7 @@ float Salary;
 char department
 ;
 
+
 };
 
 
